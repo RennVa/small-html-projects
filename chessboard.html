@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang=en>
+    <head>
+        <meta charset=utf-8>
+        <title>Chessboard</title> 
+        <style>
+            h1 {
+                text-align: center;
+
+            }
+            .row {
+                font-size: 0px;
+            }
+            .row div {
+                border: 1px solid black;
+                height: 60px;
+                width: 60px;
+                display: inline-block;
+                font-size: 1rem;
+                position: relative;
+                background-color: burlywood;
+            }
+            .row:hover div:hover {
+                background-color: red !important;
+            }
+            .row:nth-child(odd) div:nth-child(even) {
+                background-color: black;
+            }   
+            .row:nth-child(even) div:nth-child(odd) {
+                background-color: black;
+            }
+            .centered {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .row div span {
+                position: absolute;
+            }
+            .row div:first-child span:first-child {
+                left: -1em;
+                top: 1.25em;
+            }
+            .row div:last-child span:first-child {
+                right: -1em;
+                top: 1.25em;
+            }
+            .row:first-child div span:last-child {
+                top: -1.5em;
+                left: 1.5em;
+            }
+            .row:last-child div span:last-child {
+                bottom: -1.5em;
+                left: 1.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Chess Board</h1>
+        <div class="chessboard centered">
+            <div class="row">
+                <div>
+                    <span>1</span>
+                    <span>A</span>
+                </div>
+                <div>
+                    <span>B</span>
+                </div>
+                <div>
+                    <span>C</span>
+                </div>
+                <div>
+                    <span>D</span>
+                </div>
+                <div>
+                    <span>E</span>
+                </div>
+                <div>
+                    <span>F</span>
+                </div>
+                <div>
+                    <span>G</span>
+                </div>
+                <div>
+                    <span>1</span>
+                    <span>H</span>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <span>2</span>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>
+                    <span>2</span>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <span>3</span>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>
+                    <span>3</span>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <span>4</span>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>
+                    <span>4</span>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <span>5</span>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>
+                    <span>5</span>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <span>6</span>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>
+                    <span>6</span>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <span>7</span>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div>
+                    <span>7</span>
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <span>8</span>
+                    <span>A</span>
+                </div>
+                <div>
+                    <span>B</span>
+                </div>
+                <div>
+                    <span>C</span>
+                </div>
+                <div>
+                    <span>D</span>
+                </div>
+                <div>
+                    <span>E</span>
+                </div>
+                <div>
+                    <span>F</span>
+                </div>
+                <div>
+                    <span>G</span>
+                </div>
+                <div>
+                    <span>8</span>
+                    <span>H</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
